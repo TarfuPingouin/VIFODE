@@ -20,12 +20,12 @@ Adafruit_8x8matrix matrix = Adafruit_8x8matrix();
 int brightness = 50;  // 0 → max, 255 → OFF
 bool send_data = true;
 int periode = 20;
-const char* card_ver = "Card V2.1";
+const char* card_ver = "Card V2.2";
 const char* soft_ver = "Soft V1.0";
 
 #define POLYTECH_BLUE 0x04DB  // #069AD8 en RGB565
 unsigned long lastTftUpdate = 0;
-const unsigned long TFT_PERIOD = 50;  // 50 ms = 20 Hz affichage
+const unsigned long TFT_PERIOD = 500;  // 50 ms = 20 Hz affichage
 unsigned long lastSerialSend = 0;
 int db_entry = 0;
 
